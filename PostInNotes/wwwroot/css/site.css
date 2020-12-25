@@ -1,0 +1,133 @@
+﻿body {
+    min-height:100%;
+    background-color:ghostwhite;
+}
+.edit-sticker {
+    z-index: 2001;
+    height: 70vh;
+    position: fixed;
+    display: none;
+    border-radius: 10px;
+    background-color: yellow;
+    margin: 15vh 3rem 3rem 3rem;
+    -moz-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+}
+.content {
+position:absolute;
+min-height:100%;
+min-width:100%;
+}
+.edit-input {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background-color: yellow;
+    outline: none;
+    font-size:2rem;
+}
+.pink-circ {
+    color:violet;
+    margin:0.5rem;
+}
+.yellow-circ {
+    color: yellow;
+    margin: 0.5rem;
+}
+.blue-circ {
+    color: deepskyblue;
+    margin: 0.5rem;
+}
+.close-icon {
+    color:white;
+    margin: 0.5rem;
+    margin-left: auto;
+}
+.close-icon:hover {
+    font-size:1rem;
+}
+
+
+.panel {
+    background-color:black;
+    position: relative;
+    display: flex;
+    visibility: hidden;
+    width: 100%;
+    border-radius: 10px;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+    .sticker:hover .panel  {
+        visibility:visible;
+    }
+.expand {
+    margin: auto 5px 0 auto;
+    visibility: hidden;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.sticker:hover .expand {
+    visibility: visible;
+}
+.fa-chevron-right {
+    transform:rotate(45deg)
+}
+
+.resize {
+    margin: auto auto 5px 5px;
+    visibility: hidden;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.sticker:hover .resize {
+    visibility: visible;
+}
+.down-panel {
+    position: relative;
+    display: flex;
+    margin-top:auto;
+}
+.sticker {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    -moz-box-shadow: 4px 4px 5px rgba(0,0,0,.7);
+    -webkit-box-shadow: 4px 4px 5px rgba(0,0,0,.7);
+    box-shadow: 4px 4px 5px rgba(0,0,0,.7);
+    -moz-transition: -moz-box-shadow .2s linear;
+    -o-transition: box-shadow .2s linear;
+    -webkit-transition: -webkit-box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+    .sticker:hover {
+        -moz-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+        -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+        box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+        z-index: 5;
+    }
+p {
+    overflow: hidden;
+    height:100%;
+}
+.dark-fade {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+
+    display:none;
+    z-index:2000;
+}
